@@ -5,7 +5,9 @@ const Newsapp = () => {
 
   const [search,setSearch]=useState("pakistan")
   const [newsData,setNewsData]=useState(null) //api call
-const API_KEY="1e2be35fa2e64083a1489ac25f46654e";
+  const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
+
+
 
 
 const getData=async()=>{
